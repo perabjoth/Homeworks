@@ -1,4 +1,10 @@
 *.pdf
 *.ppt*
 *.doc*
-
+[Tt]humbs.db
+*.DS_Store
+~$*
+*.mp4
+*.zip
+*.7z
+*.tgz
