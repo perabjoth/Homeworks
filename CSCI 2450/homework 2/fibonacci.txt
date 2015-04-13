@@ -1,0 +1,7 @@
+int GetFibNumber(int FibIndex)
+{
+    if(FibIndex < 2 )
+        return FibIndex;
+    else
+        return GetFibNumber(FibIndex - 1) + GetFibNumber(FibIndex - 2);
+}

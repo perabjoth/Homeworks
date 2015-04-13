@@ -1,0 +1,42 @@
+/**
+* Name: Perabjoth Singh Bajwa
+* ID:2449713
+* CSCI 2125 Fall 2014
+* Homework3 : AvlTree HashTable implementation and comparison
+* Current File: Results of when hashtable size = n+1
+*      ******
+*    **********
+*   *************
+*  ***************
+*  **   *****  ***
+*  ***************
+*   ****** ******
+*    ***********
+*     *********
+*    ***********
+*   ************* 
+**/  
+For N equals 100 elements:
+Time for insertion of 100 elements into AVL tree: 0 Milliseconds
+Time for insertion of 100 elements into SeparateChainingHashTable: 15 Milliseconds
+
+For N equals 1000 elements:
+Time for insertion of 1000 elements into AVL tree: 0 Milliseconds
+Time for insertion of 1000 elements into SeparateChainingHashTable: 16 Milliseconds
+
+For N equals 10000 elements:
+Time for insertion of 10000 elements into AVL tree: 31 Milliseconds
+Time for insertion of 10000 elements into SeparateChainingHashTable: 16 Milliseconds
+
+For N equals 100000 elements:
+Time for insertion of 100000 elements into AVL tree: 94 Milliseconds
+Time for insertion of 100000 elements into SeparateChainingHashTable: 31 Milliseconds
+
+For N equals 1000000 elements:
+Time for insertion of 1000000 elements into AVL tree: 1209 Milliseconds
+Time for insertion of 1000000 elements into SeparateChainingHashTable: 1948 Milliseconds
+
+For N equals 10000000 elements:
+Time for insertion of 10000000 elements into AVL tree: 22830 Milliseconds
+Time for insertion of 10000000 elements into SeparateChainingHashTable: 18616 Milliseconds
+

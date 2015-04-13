@@ -1,0 +1,83 @@
+Spring 2015: CSCI 3301 Written Homework # 1
+
+Name:Perabjoth Singh Bajwa	ID: 2449713
+
+1) a.Since $t0 is greater than zero, then $t2 is assigned a value of 1 which 
+means that it is not equal to zero, so it goes to the line containing ELSE where 2 
+is added to it resulting in a final value of 3 in $t2.
+
+b. addi $t2, $s2, 35746
+   addi $t1, $s1, 2151693318
+The value of $t0 in octal would be 4002.
+
+2) a. $t2 = BABEFEF8
+   b. $t2 = AAAAAAA0
+   c. $t2 = 0000FFEF
+	
+3) a. assuming that $t0=f, $t1=g, $t2=h:
+      addi $t2, $t2, -5
+      add $t0, $t1, $t2
+
+b. f = g+h+i
+
+4) a. VALUE: ab cd ef 12 Big Endian
+      VALUE: 12 ef cd ab Little Endian
+    ADDRESS:  0  4  8 12
+
+b. abcdef12 = 10*16^7+11*16^6+12*16^5+13*16^4+14*16^3+15*16^2+1*16^1+2*16^0
+	        = 2882400018
+
+5) a. 50000000
+   b. There has been overflow
+   c. B0000000
+   d. It is the desired result, but there is no indication of it being negative.
+   e. D0000000
+
+6) a. op=0, rs=3, rt=2, rd=3, shamt=0, funct=34:
+      R-type
+      sub $v1, $v0, $v1
+	  000000 00011 00010 00011 100010
+
+   b. op=0x23, rs=1, rt=2, const=0x4 
+      I-type
+	  lw $v0, 4($at), 
+	  100011 00001 00010 0000000000000100
+
+7) a. 2+2+2+2+2+2+2+2+2+2 = 20
+
+   b. 
+int B = 0;
+for(int i = 10; i>0, i--)
+	{
+		B+=2;
+	}
+
+c. Considering that there are five instructions in total and the whole loop
+runs N times, 5N instructions are executed.
+
+8) a. (70*2+10*6+20*3)/100=2.6
+
+   b. Tnew = 0.75Told
+      Tnew = 0.75(0.1*6+0.7*2+0.2*3)
+      Tnew = 1.95
+      0.7*2/x+0.1*6+0.2*3 = 1.95
+      x = 1.866666666666667 (improvement factor for arithmetic operations)
+      so  CPI of arithmetic instruction: 0.7*2/1.866666666666667 = 0.7499999999999999
+
+c.    Tnew = 0.5Told
+      Tnew = 0.5(0.1*6+0.7*2+0.2*3)
+      Tnew = 1.3
+      0.7*2/x+0.1*6+0.2*3 = 1.3
+      x = 14(improvement factor for arithmetic operations)
+      so  CPI of arithmetic instruction: 0.7*2/14 = 0.1
+
+9) 
+$t0 = f*4;
+$t0 = &A[f];
+$t1 = g*4;
+$t1 = &B[g];
+$s0 = f = A[f];
+$t2 = &A[f+1];
+$t0 = A[f+1];
+$t0 = A[f+1] + A[f];
+B[g] = A[f+1] + A[f];

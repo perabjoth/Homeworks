@@ -1,0 +1,8 @@
+Vertex@4e96ac47
+Vertex@60891a0
+Vertex@1c90a278
+5
+beginning...
+writing to file...
+this is a path: 2
+done
