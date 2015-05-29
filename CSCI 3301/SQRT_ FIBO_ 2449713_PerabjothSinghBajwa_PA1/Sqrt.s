@@ -1,7 +1,7 @@
 #Perabjoth Singh Bajwa ID:2449713 CSCI 3301
 #The result is returned in $f12 and the variable is assigned in x in the .data section
 .data
-x: .float 69
+x: .float 21
 divisor: .float 2
 zero: .float 0
 zero_answer: .asciiz "Square root of 0.0 is: 0.0.\n"

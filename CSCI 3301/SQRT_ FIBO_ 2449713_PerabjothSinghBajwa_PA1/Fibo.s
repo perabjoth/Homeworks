@@ -2,10 +2,11 @@
 #index of fibonacci is stored in variable index and result is returned in register $t2
 
 .data
-index: .word 10
+index: .word -5
 message1: .asciiz "The fibonacci of "
 message2: .asciiz " is: "
 message3: .asciiz ".\n"
+message4: .asciiz "Inavlid value.\n"
 .text 
 main:
 	lw $t1, index
@@ -46,7 +47,7 @@ L1:
 	lw $t1, 0($sp)#restoring value of $t1
 	addi $sp, $sp, 8 #incrementing stack to adjust back
 	jr $ra #returning to place of call
-ZERO:#if zero or less then, fibonacci gives you zero
+
 	la $a0, message1
 	li $v0, 4
 	syscall
@@ -60,6 +61,11 @@ ZERO:#if zero or less then, fibonacci gives you zero
 	li $v0, 1
 	syscall
 	la $a0, message3
+	li $v0, 4
+	syscall
+	j DONE
+	ZERO:#if zero or less then, fibonacci gives you zero
+	la $a0, message4
 	li $v0, 4
 	syscall
 DONE:
