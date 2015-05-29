@@ -1,0 +1,16 @@
+delete from company_hires;
+delete from company_funds;
+delete from specialty;
+delete from company;
+delete from per_skill;
+delete from student_schedule;
+delete from section;
+delete from job;
+delete from phone_number;
+delete from person;
+delete from skills_covered;
+delete from course;
+delete from project;
+delete from required_skill;
+delete from job_profile;
+delete from knowledge_skill;
